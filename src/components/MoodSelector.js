@@ -1,0 +1,1 @@
+import React from 'react';\nconst moods=['😃','😞','😡','😐'];\nconst MoodSelector=({onSelect})=>{return (\n  <div>{moods.map(m=><button key={m} onClick={()=>onSelect(m)}>{m}</button>)}</div>\n);};\nexport default MoodSelector;
