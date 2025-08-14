@@ -1,0 +1,1 @@
+import React from 'react';\nconst colorMap={'😃':'#8BC34A','😞':'#03A9F4','😡':'#F44336','😐':'#FFC107'};\nconst HeatMapCalendar=({data})=>{return (<div style={{display:'grid',gridTemplateColumns:'repeat(7,40px)'}}>{data.map((d,i)=><div key={i} style={{width:40,height:40,backgroundColor:colorMap[d.mood]||'#eee'}}></div>)}</div>);};\nexport default HeatMapCalendar;
